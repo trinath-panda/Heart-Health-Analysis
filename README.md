@@ -1,5 +1,5 @@
-This project uses the sashelp.heart dataset to study heart health, identify risk factors for heart disease, examine mortality causes and trends, and explore relationshipsamong key variables.
-The goal is to derive insights and recommendations that can help improve heart health.
+This project uses the sashelp.heart dataset to study heart health, identify risk factors for heart disease, examine mortality causes and trends, and explore relationships among key variables.
+The goal is to derive insights and recommendations that can help improve heart health. For more detailsabout the project please check the protocol in th main.
 
 **Project Components**
 1. Data Preparation
