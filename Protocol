@@ -1,48 +1,74 @@
 Project Objectives:
-1.	Identify Key Risk Factors: Determine which variables are significantly associated with the incidence of coronary heart disease (CHD) and other heart-related issues.
-2.	Assess Mortality Causes: Explore the distribution of causes of death and identify trends based on demographic factors.
-3.	Examine Relationships Among Variables: Investigate correlations and relationships among key variables like age, cholesterol, blood pressure, smoking, and weight.
-4.	Make Recommendations: Provide recommendations for improving heart health based on the analysis.
+
+1. Identify Key Risk Factors: Determine which variables are significantly associated with the incidence of coronary heart disease (CHD) and other heart-related issues.
+2. Assess Mortality Causes: Explore the distribution of causes of death and identify trends based on demographic factors.
+3. Examine Relationships Among Variables: Investigate correlations and relationships among key variables like age, cholesterol, blood pressure, smoking, and weight.
+4. Make Recommendations: Provide recommendations for improving heart health based on the analysis.
 
 Data Preparation:
 Data Import and Cleaning:
-1.	Load the sashelp.heart dataset into the SAS environment.
-2.	Check for missing values and impute or handle them as needed.
-3.	Convert categorical variables to appropriate formats for analysis.
-Data Exploration:
-1.	Examine the distribution of key variables using summary statistics and visualisation techniques (e.g., histograms, box plots, bar charts).
-2.	Identify potential outliers and examine their impact on analysis.
+
+1. Load the sashelp.heart dataset into the SAS environment.
+2. Perform data quality assessment (check for errors, inconsistencies, outliers, and missing data patterns).
+3. Impute or handle missing values using appropriate techniques.
+4.cConvert categorical variables to appropriate formats for analysis.
+
+Data Exploration and Feature Engineering:
+
+1. Examine the distribution of key variables using summary statistics and visualization techniques (e.g., histograms, box plots, bar charts).
+2. Identify potential outliers and examine their impact on analysis.
+3. Create derived features or transform existing ones (e.g., calculate BMI, create categorical variables based on ranges).
 
 Statistical Analyses:
-Descriptive Statistics:
-1.	Calculate means, medians, standard deviations, and ranges for numeric variables.
-2.	Summarise categorical variables with frequencies and percentages.
-Correlation Analysis:
-1.	Examine correlations between numerical variables to understand their relationships (e.g., correlation matrix).
-2.	Use scatter plots to visualise correlations between variables like age, cholesterol, blood pressure, etc.
-Comparative Analysis:
-1.	Use t-tests or ANOVA to compare means across groups (e.g., comparing cholesterol levels between smokers and non-smokers).
-2.	Use chi-square tests for categorical comparisons (e.g., comparing smoking rates between genders).
-Survival Analysis:
-1.	Conduct survival analysis to explore factors affecting mortality.
-2.	Use Kaplan-Meier plots to visualise survival curves based on different factors like gender, smoking status, and cholesterol levels.
-3.	Perform Cox proportional hazards regression to identify significant predictors of survival.
-Logistic Regression:
-1.	Build logistic regression models to predict the probability of developing CHD or other heart-related conditions based on significant predictors (e.g., age, blood pressure, smoking, cholesterol).
+Descriptive Statistics and Correlation Analysis:
 
-Visualisation and Reporting:
-Visualisation:
-1.	Use graphs and charts to illustrate key findings, such as bar plots for categorical variables and scatter plots for correlations.
-2.	Create a heatmap for the correlation matrix to visualise relationships between variables.
-3.	Generate survival curves to depict differences in survival rates across groups.
+1. Calculate means, medians, standard deviations, and ranges for numeric variables.
+2. Summarize categorical variables with frequencies and percentages.
+3. Examine correlations between numerical variables (e.g., correlation matrix, scatter plots).
+4. Check for multicollinearity among predictor variables.
+
+Comparative Analysis:
+
+1. Use t-tests or ANOVA to compare means across groups (e.g., comparing cholesterol levels between smokers and non-smokers).
+2. Use chi-square tests for categorical comparisons (e.g., comparing smoking rates between genders).
+
+Survival Analysis:
+
+1. Conduct survival analysis to explore factors affecting mortality.
+2. Use Kaplan-Meier plots to visualize survival curves based on different factors like gender, smoking status, and cholesterol levels.
+3. Perform Cox proportional hazards regression to identify significant predictors of survival.
+
+Logistic Regression:
+
+1. Build logistic regression models to predict the probability of developing CHD or other heart-related conditions based on significant predictors (e.g., age, blood pressure, smoking, cholesterol).
+2. Include interaction effects between predictor variables in the models.
+3. Perform model evaluation and selection (e.g., cross-validation, model fit statistics, classification performance metrics).
+
+Visualization and Reporting:
+Visualization:
+
+1. Use graphs and charts to illustrate key findings, such as bar plots for categorical variables and scatter plots for correlations.
+2. Create a heatmap for the correlation matrix to visualize relationships between variables.
+3. Generate survival curves to depict differences in survival rates across groups.
+4. Visualize logistic regression model performance (e.g., ROC curves, confusion matrices).
+
 Reporting:
-1.	Prepare a summary report that outlines the key findings from the analyses.
-2.	Discuss any significant predictors or correlations and what they might indicate about heart health.
-3.	Include visualisations to support the findings and provide insights into trends or patterns.
+
+1. Prepare a summary report that outlines the key findings from the analyses.
+2. Discuss any significant predictors or correlations and their potential clinical relevance in consultation with domain experts or existing literature.
+3. Include visualizations to support the findings and provide insights into trends or patterns.
+4. Acknowledge limitations of the study, potential biases, and assumptions made during the analysis.
 
 Conclusion and Recommendations:
-Based on the analyses, summarise key conclusions, focusing on:
-1.	Factors that are strongly associated with increased risk of heart disease or mortality.
-2.	Recommendations for improving heart health based on the findings (e.g., lifestyle changes, monitoring certain health metrics).
-3.	Suggestions for further research or data collection to deepen understanding of heart health.
-  
+Based on the analyses, summarize key conclusions, focusing on:
+
+1. Factors that are strongly associated with increased risk of heart disease or mortality.
+2. Recommendations for improving heart health based on the findings (e.g., lifestyle changes, monitoring certain health metrics).
+3. Suggestions for further research or data collection to deepen understanding of heart health.
+
+Validation and Sensitivity Analysis:
+
+1. If possible, validate the findings on an independent dataset or perform a holdout sample validation to assess generalizability.
+2. Conduct sensitivity analyses to assess the robustness of findings to potential violations of assumptions or changes in data preprocessing steps.
+
+This protocol incorporates data quality assessment, feature engineering, checking modeling assumptions, rigorous model evaluation and selection, investigating interaction effects, enhancing interpretability and clinical relevance, acknowledging limitations, and validating and assessing the robustness of findings. These additions aim to strengthen the analysis and align it with best practices in data analysis and statistical modeling.
